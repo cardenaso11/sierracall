@@ -92,6 +92,7 @@ int64_t sierracall(uint64_t numofargs, uint64_t callnum, ...)
     if (returnval < 0)
     {
         errno = -1 * returnval;
+	return -1;
     }
     
     return returnval;
